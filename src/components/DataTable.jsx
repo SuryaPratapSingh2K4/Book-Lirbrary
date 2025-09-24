@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { handleDownload } from "./handleDownload";
+import { handleDownload } from "../utils/handleDownload";
 
 function DataTable({ books }) {
     const [data, setData] = useState([]);
@@ -49,7 +49,7 @@ function DataTable({ books }) {
             </div>
 
             {/* Scrollable Table */}
-            <div className="overflow-x-auto flex-1">
+            <div className=" flex-1">
                 <div className="min-w-[600px] w-full">
                     {/* Table Header */}
                     <div className="flex font-semibold border-b border-gray-400 py-2 bg-gray-100 sticky top-0 z-10">
